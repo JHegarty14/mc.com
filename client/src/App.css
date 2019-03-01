@@ -1,0 +1,22 @@
+a {
+  padding: '15px 0 0 0';
+  font-Family: 'News Cycle, sans-serif';
+  font-Size: '20px';
+  line-Height: '29px';
+  color: #424242;
+}
+
+a:hover {
+  color: #93b28b;
+}
+
+.links {
+  padding: '15px 0 0 0';
+  font-Family: 'News Cycle, sans-serif';
+  font-Size: '20px';
+  line-Height: '29px';
+}
+
+.links:hover {
+  color: #93b28b;
+}
