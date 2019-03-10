@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reduxThunk from 'redux-thunk';
 import App from './src/App';
-import * as styles from './src/App.css';
+import * as styles from './src/App.scss';
 import reducers from './src/reducers/reducers';
 import registerServiceWorker from './src/registerServiceWorker';
 

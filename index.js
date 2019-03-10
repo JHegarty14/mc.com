@@ -8,22 +8,22 @@ const path = require('path');
 
 const app = express();
 
-const sequelize = new Sequelize(keys.MYSQL_DATABASE, keys.MYSQL_USER, keys.MYSQL_PASSWORD,
-  {
-    port     : "3306",
-    host     : "localhost",
-    dialect  : "mysql"
-  }, 
-);
+//const sequelize = new Sequelize(keys.MYSQL_DATABASE, keys.MYSQL_USER, keys.MYSQL_PASSWORD,
+//  {
+//    port     : "3306",
+//    host     : "localhost",
+//    dialect  : "mysql"
+//  }, 
+//);
 
-sequelize.authenticate()
-  .then((err) => {
-    if (!!err) {
-      console.log('unable to connect: ' + err)
-    } else {
-      console.log('Connection success!')
-    }
-  });
+//sequelize.authenticate()
+//  .then((err) => {
+//    if (!!err) {
+//      console.log('unable to connect: ' + err)
+//    } else {
+//      console.log('Connection success!')
+//    }
+//  });
 
 app.use(bodyParser.json());
 
@@ -40,13 +40,13 @@ if (process.env.NODE_ENV === 'production') {
   })
 }
 
-app.get('/p/blog', (req, res) => {
-  const query = "SELECT * FROM blogEntries";
-  sequelize.query(query, { type: Sequelize.QueryTypes.SELECT }).then(result => {
-    console.log(JSON.stringify(result));
-    res.send(JSON.stringify(result));
-  })
-})
+//app.get('/p/blog', (req, res) => {
+//  const query = "SELECT * FROM blogEntries";
+//  sequelize.query(query, { type: Sequelize.QueryTypes.SELECT }).then(result => {
+//    console.log(JSON.stringify(result));
+//    res.send(JSON.stringify(result));
+//  })
+//})
 
 const PORT = process.env.PORT || 3005;
 app.listen(PORT);
