@@ -17,17 +17,18 @@ const btn = {
   borderStyle: 'solid',
   textAlign: 'center',
   color: '#424242',
-  fontFamily: 'News Cycle, sans-serif',
+  fontFamily: 'Ubuntu, sans-serif',
 }
 
 const col = {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    margin: 0
 }
 
 const txtBlock = {
-  padding: '50px 0 0px 0'
+  padding: '0'
 }
 
 const header = {
@@ -37,16 +38,9 @@ const header = {
 }
 
 const bodyTxt = {
-    padding: '15px 0 0 0',
-    fontFamily: 'News Cycle, sans-serif',
-    fontSize: '20px',
-    lineHeight: '29px'
-}
-
-const hoverTxt = {
-  fontFamily: 'News Cycle, sans-serif',
-  fontSize: '20px',
-  lineHeight: '29px'
+    fontFamily: 'Ubuntu, sans-serif',
+    fontSize: '1.75rem',
+    lineHeight: '40px'
 }
 
 class Download extends Component {
@@ -81,7 +75,7 @@ class Download extends Component {
     if (this.state.width > 430) {
       return(
         <div style={{ padding: '25px 0 0 0' }}>
-          <h6 style={{ fontFamily: 'News Cycle, sans-serif', textAlign: 'center', fontSize: '20px' }}>Select to download as pdf or view resume in browser</h6>
+          <h6 style={{ fontFamily: 'Helvetica, sans-serif', textAlign: 'center', fontSize: '20px' }}>Select to download as pdf or view resume in browser</h6>
           <Col style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '50px 0 0 0' }}>
             <Row>
               <Button className='transparent modal-close' style={btn} node='a' href={resume} download>Download</Button>
@@ -140,25 +134,25 @@ class Contact extends Component {
 
     render() {
         return(
-          <div style={{ backgroundColor: 'white', height: '100%' }}>
+          <div style={{ backgroundColor: 'white', height: '100vh' }}>
             <div style={bgStyle}>
-              <Row style={{ padding: '100px 0 0 0'}}>
+              <Row style={{ padding: '10px 0 0 0'}}>
                 <Col xs={12} s={12} m={7} l={7} xl={7} style={col}>
                   <div className="container" style={txtBlock}>
-                    <h6 style={bodyTxt}>I'm a Colombian born and New England raised writer, former project manager and freelance PA currently based in Los Angeles. After graduating from NYU's Tisch School of the Arts with degrees in Dramatic Writing & French, I mostly divided my time doing literary research and translation. I'm interested in telling stories that further explore the narratives of POC folx at the intersection of pop culture + politics across a variety of mediums.</h6>
+                    <h6 style={bodyTxt}>I'm a Colombian born and New England raised writer and creative currently based in Los Angeles. After graduating from NYU's Tisch School of the Arts with degrees in Dramatic Writing & French, I mostly divided my time doing literary research and translation. I'm interested in telling stories that further explore the narratives of POC folx at the intersection of pop culture + politics across a variety of mediums.</h6>
                     <p style={bodyTxt}>Some of my interests include trying to learn multiple new languages at once, discussing latin music at length to anyone who will listen, and not letting twitter ruin my day.</p>
                   </div>
                 </Col>
                 <Col xs={12} s={12} m={5} l={5} xl={5}>
                   <div className="container" style={txtBlock}>
-                    <img src={mc} style={{ height: '70%', width: '70%', minHeight: '300px', minWidth: '200px' }} alt=""/>
+                    <img src={mc} style={{ height: '90%', width: '90%', minHeight: '300px', minWidth: '200px' }} alt=""/>
                     <ul>
                       <li style={bodyTxt}>Reach out:</li>
-                      <li style={hoverTxt} className='links'><a href="https://www.instagram.com/mariacorrales_" target="_blank" rel="noopener noreferrer"><span style={{ fontFamily: 'News Cycle, sans-serif' }}>Instagram</span></a></li>
-                      <li style={hoverTxt} className='links'><a href="https://www.linkedin.com/in/maria-corrales" target="_blank" rel="noopener noreferrer"><span style={{ fontFamily: 'News Cycle, sans-serif' }}>LinkedIn</span></a></li>
-                      <li style={hoverTxt} className='links'><a href="https://open.spotify.com/user/ohhmaria" target="_blank" rel="noopener noreferrer"><span style={{ fontFamily: 'News Cycle, sans-serif' }}>Spotify</span></a></li>
-                      <li style={hoverTxt} className='links'><a href="https://swearby.com/profile/maria-corrales" target="_blank" rel="noopener noreferrer"><span style={{ fontFamily: 'News Cycle, sans-serif' }}>SwearBy</span></a></li>
-                      <li style={hoverTxt} className='links'><a onClick={this.copyToClipboard}><span style={{ fontFamily: 'News Cycle, sans-serif',cursor: 'pointer' }}>{this.state.email}</span></a></li>
+                      <li className='links'><a href="https://www.instagram.com/mariacorrales_" target="_blank" rel="noopener noreferrer"><span style={{ fontFamily: 'Ubuntu, sans-serif' }}>Instagram</span></a></li>
+                      <li className='links'><a href="https://www.linkedin.com/in/maria-corrales" target="_blank" rel="noopener noreferrer"><span style={{ fontFamily: 'Ubuntu, sans-serif' }}>LinkedIn</span></a></li>
+                      <li className='links'><a href="https://open.spotify.com/user/ohhmaria" target="_blank" rel="noopener noreferrer"><span style={{ fontFamily: 'Ubuntu, sans-serif' }}>Spotify</span></a></li>
+                      <li className='links'><a href="https://swearby.com/profile/maria-corrales" target="_blank" rel="noopener noreferrer"><span style={{ fontFamily: 'Ubuntu, sans-serif' }}>SwearBy</span></a></li>
+                      <li className='links'><a href="mailto:jmhegarty14@gmail.com"><span style={{ fontFamily: 'Ubuntu, sans-serif',cursor: 'pointer' }}>{this.state.email}</span></a></li>
                     </ul>
                   </div>
                   
