@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Row, Button, Modal } from 'react-materialize';
-import Download from './Download';
 import './App.css';
 import Contact from './Contact';
-const bgimage = require('./images/bgpic.jpg');
-const mcLogo = require('./images/eggshellname.jpg');
 
 class Main extends Component {
     constructor(props) {
@@ -23,7 +20,9 @@ class Main extends Component {
     }
 
     componentDidMount() {
-      setTimeout(this.handleScrollDown, 3200);
+      if (this.state.width > 870) {
+        setTimeout(this.handleScrollDown, 3200);
+      }
     }
   
     componentWillUnmount() {

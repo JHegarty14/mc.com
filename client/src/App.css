@@ -121,8 +121,8 @@ a:hover {
 
 .res_button {
   background: none;
-  color: white;
-  border: 1px white solid;
+  color: red;
+  border: 1px red solid;
   border-radius: 3px;
 }
 
@@ -132,18 +132,24 @@ a:hover {
 }
 
 @media screen and (max-width: 400px) {
+
+  .web_container {
+    height: 50vh;
+  }
+
   .thank_you {
     font-size: 2.4rem;
     letter-spacing: 18px;
     padding-top: 150px;
+    height: 50vh;
   }
 
   .slowfade {
-    height: 2.5rem;
+    height: 2.2rem;
   }
 
   .fastfade {
-    height: 2.5rem;
+    height: 2.2rem;
   }
 
   .come_again {
@@ -158,10 +164,16 @@ a:hover {
 }
 
 @media screen and (max-width: 453px) and (min-width: 401px) {
+
+  .web_container {
+    height: 50vh;
+  }
+
   .thank_you {
     font-size: 3rem;
     letter-spacing: 20px;
     padding-top: 150px;
+    height: 50vh;
   }
 
   .slowfade {
@@ -184,18 +196,24 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) and (min-width: 454px) {
+
+  .web_container {
+    height: 50vh;
+  }
+
   .thank_you {
     font-size: 3.6rem;
     letter-spacing: 24px;
     padding-top: 100px;
+    height: 50vh;
   }
 
   .slowfade {
-    height: 3.5rem;
+    height: 3.1rem;
   }
 
   .fastfade {
-    height: 3.5rem;
+    height: 3.1rem;
   }
 
   .come_again {
@@ -209,18 +227,55 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 950px) and (min-width: 601px) {
+@media screen and (max-width: 685px) and (min-width: 601px) {
+  .web_container {
+    height: 75vh;
+  }
+
   .thank_you {
     font-size: 4.5rem;
-    letter-spacing: 36px;
+    letter-spacing: 24px;
+    padding-top: 100px;
+    height: 75vh;
   }
 
   .slowfade {
-    height: 4.5rem;
+    height: 4rem;
   }
 
   .fastfade {
-    height: 4.5rem;
+    height: 4rem;
+  }
+
+  .come_again {
+    padding-top: 20px;
+    font-size: 1.5rem;
+    height: 3rem;
+  }
+
+  .hero_row {
+    padding-top: 125px !important;
+  }
+}
+
+@media screen and (max-width: 950px) and (min-width: 686px) {
+
+  .web_container {
+    height: 75vh;
+  }
+
+  .thank_you {
+    font-size: 5.5rem;
+    letter-spacing: 30px;
+    height: 75vh;
+  }
+
+  .slowfade {
+    height: 4.75rem;
+  }
+
+  .fastfade {
+    height: 4.75rem;
   }
 
   .come_again {

@@ -139,8 +139,9 @@ class Contact extends Component {
               <Row style={{ padding: '10px 0 0 0'}}>
                 <Col xs={12} s={12} m={7} l={7} xl={7} style={col}>
                   <div className="container" style={txtBlock}>
-                    <h6 style={bodyTxt}>I'm a Colombian born and New England raised writer and creative currently based in Los Angeles. After graduating from NYU's Tisch School of the Arts with degrees in Dramatic Writing & French, I mostly divided my time doing literary research and translation. I'm interested in telling stories that further explore the narratives of POC folx at the intersection of pop culture + politics across a variety of mediums.</h6>
+                    <h6 style={bodyTxt}>I'm a Colombian born and New England raised writer and creative focusing on post-production currently based in Los Angeles. After graduating from NYU's Tisch School of the Arts with degrees in Dramatic Writing & French, I mostly divided my time doing literary research and translation. I'm interested in telling stories that further explore the narratives of POC folx at the intersection of pop culture + politics across a variety of mediums.</h6>
                     <p style={bodyTxt}>Some of my interests include trying to learn multiple new languages at once, discussing latin music at length to anyone who will listen, and not letting twitter ruin my day.</p>
+                    <Button className="res_button" flat={true}>Download Resume</Button>
                   </div>
                 </Col>
                 <Col xs={12} s={12} m={5} l={5} xl={5}>
@@ -150,6 +151,7 @@ class Contact extends Component {
                       <li style={bodyTxt}>Reach out:</li>
                       <li className='links'><a href="https://www.instagram.com/mariacorrales_" target="_blank" rel="noopener noreferrer"><span style={{ fontFamily: 'Ubuntu, sans-serif' }}>Instagram</span></a></li>
                       <li className='links'><a href="https://www.linkedin.com/in/maria-corrales" target="_blank" rel="noopener noreferrer"><span style={{ fontFamily: 'Ubuntu, sans-serif' }}>LinkedIn</span></a></li>
+                      <li className='links'><a href="https://twitter.com/mrcrrls" target="_blank" rel="noopener noreferrer"><span style={{ fontFamily: 'Ubuntu, sans-serif' }}>Twitter</span></a></li>
                       <li className='links'><a href="https://open.spotify.com/user/ohhmaria" target="_blank" rel="noopener noreferrer"><span style={{ fontFamily: 'Ubuntu, sans-serif' }}>Spotify</span></a></li>
                       <li className='links'><a href="https://swearby.com/profile/maria-corrales" target="_blank" rel="noopener noreferrer"><span style={{ fontFamily: 'Ubuntu, sans-serif' }}>SwearBy</span></a></li>
                       <li className='links'><a href="mailto:jmhegarty14@gmail.com"><span style={{ fontFamily: 'Ubuntu, sans-serif',cursor: 'pointer' }}>{this.state.email}</span></a></li>
