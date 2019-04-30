@@ -119,6 +119,10 @@ a:hover {
   margin-left: auto;
 }
 
+.res_button_container {
+  padding-bottom: 20px;
+}
+
 .res_button {
   background: none;
   color: red;
